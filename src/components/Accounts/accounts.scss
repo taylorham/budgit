@@ -1,0 +1,30 @@
+.accounts {
+  min-height: 120px;
+  .name {
+    text-align: right;
+  }
+  .amount {
+    float: right;
+  }
+  .banking {
+    font-size: 12px;
+    line-height: 28px;
+    .income {
+      font-size: 16px;
+    }
+    .savings {
+    }
+    .checking {
+    }
+  }
+  .outgoing {
+    .expenses {
+      color: #900;
+    }
+    .debts {
+      color: #900;
+    }
+  }
+  .netTotal {
+  }
+}

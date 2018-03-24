@@ -1,0 +1,32 @@
+{
+  "name": "budgit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "yarn build-css -q && yarn build-css -w -r",
+    "start": "yarn watch-css | react-scripts start",
+    "build": "yarn build-css -q && react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "node-sass-chokidar": "^0.0.3",
+    "prop-types": "^15.6.0",
+    "react-bootstrap": "^0.31.5",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "proseWrap": "never"
+  }
+}

@@ -1,0 +1,49 @@
+.expenses {
+  .expense {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    &.editing {
+      padding: 10px 4px;
+      &:hover .edit {
+        display: none;
+      }
+    }
+    & > div {
+      height: 50px;
+      line-height: 50px;
+    }
+    .name {
+      float: left;
+      max-width: calc(59% - 16px);
+      margin-left: 8px;
+      font-weight: bold;
+    }
+    .amount {
+      float: right;
+      font-size: 16px;
+      max-width: calc(46% - 14px);
+      text-align: right;
+      margin-right: 8px;
+      input {
+        width: calc(100% - 15px);
+      }
+    }
+    .form-control {
+      display: initial;
+      padding: 6px 0 6px 6px;
+    }
+    .edit {
+      display: none;
+      position: absolute;
+      bottom: 5px;
+      right: 20px;
+      font-size: 10px;
+      line-height: 10px;
+      color: #999;
+    }
+    &:hover .edit {
+      display: inline;
+    }
+  }
+}
